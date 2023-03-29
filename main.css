@@ -24,6 +24,10 @@ footer {
     font-size: 14pt;
     font-style: italic;
     text-align: right;
+    position: fixed;
+    width: 100%;
+    transition: 650ms;
+    bottom: 0%;
 }
 
 footer:not(hover) {
