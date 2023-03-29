@@ -12,6 +12,11 @@ header {
     font-size: 16pt;
 }
 
+header:hover {
+    background-image: linear-gradient(to left bottom, black, green, red, yellow);
+    color: lightcoral;
+}
+
 footer {
     background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
     color: lightgreen;
@@ -19,6 +24,10 @@ footer {
     font-size: 14pt;
     font-style: italic;
     text-align: right;
+}
+
+footer:not(hover) {
+    transition: 0.3s;
 }
 
 a {
