@@ -3,6 +3,7 @@ body {
     color: maroon;
     font-family: Arial;
     margin: 0px;
+    padding-bottom: 15px;
 }
 
 header {
@@ -31,7 +32,12 @@ footer {
 }
 
 footer:not(hover) {
-    transition: 0.3s;
+    transition: color 0,3s;
+}
+
+footer:hover {
+    background-image: linear-gradient(to left bottom, black, green, red, yellow);
+    color: lightcoral;
 }
 
 a {
