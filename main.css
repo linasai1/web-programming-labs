@@ -18,6 +18,10 @@ header:hover {
     color: lightcoral;
 }
 
+main {
+    margin: 10px 20px;
+}
+
 footer {
     background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
     color: lightgreen;
