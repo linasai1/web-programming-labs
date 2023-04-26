@@ -15,10 +15,12 @@
             let result = a + b;
             alert('Сумма ' + a + ' и ' + b + ' равна ' + result);
         }
+        
         function showAuthor() {
             let author = 'Автор страницы:\nСайфулина Алина Витальевна\nДобрый день';
             alert(author);
         }
+        
         function showMultiply() {
             let inputA = document.getElementById('numberA');
             let inputB = document.getElementById('numberB');
@@ -27,6 +29,7 @@
             let result = a-b;
             alert('Разность ' + a + ' и ' + b + ' равна ' + result);
         }
+        
         function showMultiplication() {
             let inputA = document.getElementById('numberA');
             let inputB = document.getElementById('numberB');
@@ -35,6 +38,7 @@
             let result = a*b;
             alert('Произведение ' + a + ' и ' + b + ' равно ' + result);
         }
+        
         function showDivision() {
             let inputA = document.getElementById('numberA');
             let inputB = document.getElementById('numberB');
@@ -43,6 +47,7 @@
             let result = a/b;
             alert('Частное ' + a + ' и ' + b + ' равна ' + result);
         }
+        
         function changeOutput (buttonNum, backColor, textColor, borderColor) {
             let output = document.getElementById('output');
             output.innerHTML = 'Нажата кнопка ' + buttonNum;
@@ -50,6 +55,7 @@
             output.style.color = textColor;
             output.style.borderBlockColor = borderColor;
         }
+        
         function rasschet () {
             let inputA = document.getElementById('Apple');
             let a = parseInt(inputA.value);
@@ -65,7 +71,49 @@
             let output = document.getElementById('result1');
             output.innerHTML = 'Итого: ' + result1;
         }
+        
+        function clickOn1 () {
+            document.getElementById('1').style.display = "none";
+        }
+        
+        function clickOn2 () {
+            document.getElementById('2').style.display = "none";
+        }
+        
+        function ClickOn3 () {
+            document.getElementById('3').style.display = "none";
+        }
+        
+        function clickOn4 () {
+            document.getElementById('4').style.display = "none";
+        }
+        
+        function clickOn5 () {
+            document.getElementById('5').style.display = "none";
+        }
+        
+        function clickOn6 () {
+            document.getElementById('6').style.display = "none";
+        }
+        
+        function clickOn7 () {
+            document.getElementById('7').style.display = "none";
+        }
+        
+        function clickOn8 () {
+            document.getElementById('8').style.display = "none";
+        }
+        
+        function clickOn9 () {
+            document.getElementById('9').style.display = "none";
+        }
+        
+        function clickOn10 () {
+            document.getElementById('10').style.display = "none";
+        }
+
     </script>
+    
     <style>
         .message {
             cursor: pointer;
@@ -82,7 +130,20 @@
             margin: 10px;
             border-radius: 7px;
         }
-
+        .circles{
+            cursor: default;
+            display: inline-block;
+            border: 2px solid red;
+            border-radius: 50%;
+            margin: 10px;
+            padding: 20px;
+            margin: 10px;
+            font-size: 30px;
+            color: white;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -99,6 +160,7 @@
         <div class="message" onclick="showMultiplication()">Найти произведение чисел</div>
         <div class="message" onclick="showDivision()">Найти деление чисел</div>
         <div class="message" onclick="showAuthor()">Узнать, кто автор страницы</div>
+        
         <div>
             <input type="button" value="Кнопка 1" onclick="changeOutput(1,'red','yellow', 'blue')">
             <input type="button" value="Кнопка 2" onclick="changeOutput(2,'black','lime', 'pink')">
@@ -118,9 +180,19 @@
             <input type="button" value="Рассчитать" onclick="rasschet()"><br>
             <div id="result1"></div>
         </div>
-            
-
-
+        
+        <div >
+            <div class="circles" onclick="clickOn1()" style="position: fixed; right: 1340px; background-color: #f47f35;" id="1">1</div>
+            <div class="circles" onclick="clickOn2()" style="position: fixed; right: 1260px; background-color: #f6069e;" id="2">2</div>
+            <div class="circles" onclick="ClickOn3()" style="position: fixed; right: 1180px; background-color: #0754f2;" id="3">3</div>
+            <div class="circles" onclick="clickOn4()" style="position: fixed; right: 1100px; background-color: #e286cd;" id="4">4</div>
+            <div class="circles" onclick="clickOn5()" style="position: fixed; right: 1020px; background-color: #461d59;" id="5">5</div>
+            <div class="circles" onclick="clickOn6()" style="position: fixed; right: 940px; background-color: #94527a;" id="6">6</div>
+            <div class="circles" onclick="clickOn7()" style="position: fixed; right: 860px; background-color: #7cd3af;" id="7">7</div>
+            <div class="circles" onclick="clickOn8()" style="position: fixed; right: 780px; background-color: #ae2092;" id="8">8</div>
+            <div class="circles" onclick="clickOn9()" style="position: fixed; right: 700px; background-color: #beb108;" id="9">9</div>
+            <div class="circles" onclick="clickOn10()" style="position: fixed; right: 620px; background-color: #1379a1;" id="10">10</div>
+        </div>
     </main>
 
     <footer onclick="showAuthor()">
