@@ -6,10 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайфулина Алина Витальевна. Лабораторная 7</title>
     <link rel="stylesheet" href="main.css">
+
+    <style>
+        .transparentBloks {
+            opacity: 0%;
+        }
+
+        .circle{
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 50%;
+            margin: 10px;
+            padding: 20px;
+            margin: 10px;
+            font-size: 30px;
+            color: white;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+        }
+    </style>
+    
+    <script>
+        // создание простых блоков
+        function addBlocks() {
+            let blocks = document.getElementById('blocks');
+            for (let i = 0; i < 10; i++){
+                let block = document.createElement('div');
+                block.innerHTML = 'Блок №' + (i+1) + ': ' + (2*i**2);
+                
+                blocks.appendChild(block);
+            }
+        }
+    </script>
 </head>
 
 <body>
-    
+    <header>
+        НГТУ, ФБ, Лабораторная работа 7
+    </header> 
+    <main style="margin-bottom: 50px;">
+        <button onclick="addBlocks()">Создать блоки</button>
+        <div id="blocks"></div>
+
+    </main>
     <footer>
         &copy; Алина Сайфулина, ФБИ-13, 2 курс, 2023
     </footer>
