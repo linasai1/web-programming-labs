@@ -171,6 +171,22 @@
             }
         }
 
+        function sizeBlock(div){
+            let width = parseInt(div.style.width);
+            if (isNaN(width)){
+                width = 50;
+            }
+            if (width < 1000){
+                width = width + 50;
+                div.style.width = width + 'px';
+            }
+            else {
+                width = width - 900;
+                div.style.width = width + 'px';
+            }
+         }
+
+
     </script>
 
 </head>
