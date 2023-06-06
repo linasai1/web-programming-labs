@@ -15,6 +15,24 @@
         <div class="time" id="time">00:00:00</div>
     </header>
 
+    <main>
+        <div id="current-date"></div>
+        <div>
+            <label>Дата рождения: <input type="date"></label>
+            <div>
+                <button onclick="showDaysCount()">Показать количество дней</button>
+            </div>
+            <div id="result"></div>
+            <div>
+                <button onclick="cleanDaysCount()">Очистить счетчик</button>
+            </div>
+        </div>
+
+        <div>
+            <button onclick="data()"></button>
+        </div>
+    </main>
+
     <footer>
         &copy; Алина Сайфулина, ФБИ-13, 2 курс, 2023
     </footer>
