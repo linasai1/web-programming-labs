@@ -33,6 +33,7 @@ footer {
     width: 100%;
     transition: 650ms;
     bottom: 0%;
+    
 }
 
 footer:not(hover) {
